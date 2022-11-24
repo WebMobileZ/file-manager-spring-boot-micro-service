@@ -39,9 +39,9 @@ public class FileManagerResource {
         final List<Path> srcFiles =  Arrays.asList(createPath1,createPath2,createPath3);
         HttpEntity<List<Path>> httpEntity = new HttpEntity<List<Path>>(srcFiles, headers);
 
-        ResponseEntity<String> responseEntity = restTemplate.exchange("http://localhost:8082/api/zipConverter", HttpMethod.POST, httpEntity,String.class);
+        ResponseEntity<String> zipFileConvertorResponse = restTemplate.exchange("http://localhost:8082/api/zipConverter", HttpMethod.POST, httpEntity,String.class);
 
-        return new ResponseEntity<String>(responseEntity.getBody(), HttpStatus.CREATED);
+        return new ResponseEntity<String>(zipFileConvertorResponse.getBody(), HttpStatus.CREATED);
 
 
     }
