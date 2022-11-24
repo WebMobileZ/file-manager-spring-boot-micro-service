@@ -1,0 +1,26 @@
+{
+	"info": {
+		"_postman_id": "2c154d6f-4438-41f7-8473-9500eba886a1",
+		"name": "Filemanager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "865546"
+	},
+	"item": [
+		{
+			"name": "createZipFile",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "sendFileToZipFileReceiver",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
